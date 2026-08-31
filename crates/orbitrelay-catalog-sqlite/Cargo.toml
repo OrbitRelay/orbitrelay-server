@@ -1,0 +1,25 @@
+[package]
+name = "orbitrelay-catalog-sqlite"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+readme.workspace = true
+description = "Atomic SQLite Document and Canvas catalog adapter for OrbitRelay"
+
+[dependencies]
+async-trait = "0.1"
+orbitrelay-asset.workspace = true
+orbitrelay-canvas.workspace = true
+orbitrelay-canvas-runtime.workspace = true
+orbitrelay-core.workspace = true
+orbitrelay-document.workspace = true
+orbitrelay-document-runtime.workspace = true
+orbitrelay-protocol.workspace = true
+rusqlite.workspace = true
+thiserror = "2"
+tokio = { version = "1", features = ["rt", "sync"] }
+
+[dev-dependencies]
+tempfile = "3"
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "sync"] }

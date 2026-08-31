@@ -1,0 +1,11 @@
+{
+  "kind": "query",
+  "payload": {
+    "version": { "major": 0, "minor": 2, "patch": 0 },
+    "message_id": "33333333-3333-4333-8333-333333333333",
+    "message_type": "canvas.history.page",
+    "payload": {
+      "canvas_id": "77777777-7777-4777-8777-777777777777"
+    }
+  }
+}

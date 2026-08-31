@@ -1,0 +1,22 @@
+{
+  "kind": "query_response",
+  "payload": {
+    "version": { "major": 0, "minor": 2, "patch": 0 },
+    "request_id": "33333333-3333-4333-8333-333333333333",
+    "query_type": "asset.access.resolve",
+    "result": {
+      "status": "success",
+      "payload": {
+        "asset_id": "55555555-5555-4555-8555-555555555555",
+        "delivery_kind": "http",
+        "url": "http://127.0.0.1:8081/assets/55555555-5555-4555-8555-555555555555",
+        "authorization": {
+          "type": "bearer",
+          "token": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+        },
+        "expires_at": "2023-11-14T22:23:20Z",
+        "supports_range": true
+      }
+    }
+  }
+}

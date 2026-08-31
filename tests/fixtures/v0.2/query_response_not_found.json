@@ -1,0 +1,16 @@
+{
+  "kind": "query_response",
+  "payload": {
+    "version": { "major": 0, "minor": 2, "patch": 0 },
+    "request_id": "33333333-3333-4333-8333-333333333333",
+    "query_type": "document.get",
+    "result": {
+      "status": "error",
+      "payload": {
+        "code": "not_found",
+        "message": "The requested resource was not found.",
+        "retryable": false
+      }
+    }
+  }
+}

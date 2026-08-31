@@ -1,0 +1,20 @@
+[package]
+name = "orbitrelay-storage-sqlite"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+readme.workspace = true
+description = "SQLite EventStore adapter with schema, integrity, and lifecycle gates for OrbitRelay"
+
+[dependencies]
+async-trait = "0.1"
+orbitrelay-core.workspace = true
+orbitrelay-protocol.workspace = true
+orbitrelay-storage.workspace = true
+rusqlite.workspace = true
+serde_json = "1"
+tokio = { version = "1", features = ["rt", "sync"] }
+
+[dev-dependencies]
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "sync"] }

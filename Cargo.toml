@@ -1,0 +1,36 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/orbitrelay-storage-sqlite",
+    "crates/orbitrelay-server",
+    "crates/orbitrelay-asset-local-store",
+    "crates/orbitrelay-catalog-sqlite",
+]
+
+[workspace.package]
+version = "0.1.0-alpha"
+edition = "2021"
+license = "Apache-2.0"
+repository = "https://github.com/orbitrelay/orbitrelay-server"
+readme = "README.md"
+
+[workspace.dependencies]
+orbitrelay-core = "=0.1.0-alpha"
+orbitrelay-protocol = "=0.1.0-alpha"
+orbitrelay-runtime = "=0.1.0-alpha"
+orbitrelay-sync = "=0.1.0-alpha"
+orbitrelay-storage = "=0.1.0-alpha"
+orbitrelay-storage-sqlite = { version = "=0.1.0-alpha", path = "crates/orbitrelay-storage-sqlite" }
+orbitrelay-node = "=0.1.0-alpha"
+orbitrelay-transport = "=0.1.0-alpha"
+orbitrelay-canvas = "=0.1.0-alpha"
+orbitrelay-canvas-runtime = "=0.1.0-alpha"
+orbitrelay-asset = "=0.1.0-alpha"
+orbitrelay-asset-runtime = "=0.1.0-alpha"
+orbitrelay-asset-local-store = { version = "=0.1.0-alpha", path = "crates/orbitrelay-asset-local-store" }
+orbitrelay-document = "=0.1.0-alpha"
+orbitrelay-document-runtime = "=0.1.0-alpha"
+orbitrelay-catalog-sqlite = { version = "=0.1.0-alpha", path = "crates/orbitrelay-catalog-sqlite" }
+orbitrelay-query = "=0.1.0-alpha"
+orbitrelay-pdf = "=0.1.0-alpha"
+rusqlite = { version = "0.40.2", features = ["bundled"] }

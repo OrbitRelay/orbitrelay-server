@@ -1,0 +1,16 @@
+{
+  "kind": "query_response",
+  "payload": {
+    "version": { "major": 0, "minor": 2, "patch": 0 },
+    "request_id": "33333333-3333-4333-8333-333333333334",
+    "query_type": "canvas.history.page",
+    "result": {
+      "status": "error",
+      "payload": {
+        "code": "invalid_query",
+        "message": "The query payload is invalid.",
+        "retryable": false
+      }
+    }
+  }
+}

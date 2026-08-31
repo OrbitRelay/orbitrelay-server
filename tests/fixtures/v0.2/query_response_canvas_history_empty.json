@@ -1,0 +1,18 @@
+{
+  "kind": "query_response",
+  "payload": {
+    "version": { "major": 0, "minor": 2, "patch": 0 },
+    "request_id": "33333333-3333-4333-8333-333333333335",
+    "query_type": "canvas.history.page",
+    "result": {
+      "status": "success",
+      "payload": {
+        "canvas_id": "77777777-7777-4777-8777-777777777777",
+        "checkpoint": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "events": [],
+        "next_cursor": null,
+        "complete": true
+      }
+    }
+  }
+}

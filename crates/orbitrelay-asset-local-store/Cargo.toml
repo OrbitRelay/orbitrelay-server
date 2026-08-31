@@ -1,0 +1,23 @@
+[package]
+name = "orbitrelay-asset-local-store"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+readme.workspace = true
+description = "SQLite asset metadata and immutable local blob storage adapter for OrbitRelay"
+
+[dependencies]
+async-trait = "0.1"
+bytes = "1"
+orbitrelay-asset.workspace = true
+orbitrelay-asset-runtime.workspace = true
+orbitrelay-core.workspace = true
+rusqlite.workspace = true
+sha2 = "0.10"
+thiserror = "2"
+tokio = { version = "1", features = ["fs", "io-util", "rt", "sync"] }
+
+[dev-dependencies]
+tempfile = "3"
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "sync"] }

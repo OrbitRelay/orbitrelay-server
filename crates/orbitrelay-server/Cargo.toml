@@ -1,0 +1,46 @@
+[package]
+name = "orbitrelay-server"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+readme.workspace = true
+description = "Single-node OrbitRelay Community server composition and process"
+
+[dependencies]
+orbitrelay-core.workspace = true
+orbitrelay-protocol.workspace = true
+orbitrelay-runtime.workspace = true
+orbitrelay-sync.workspace = true
+orbitrelay-storage.workspace = true
+orbitrelay-storage-sqlite.workspace = true
+orbitrelay-node.workspace = true
+orbitrelay-transport.workspace = true
+orbitrelay-canvas.workspace = true
+orbitrelay-canvas-runtime.workspace = true
+orbitrelay-asset.workspace = true
+orbitrelay-asset-runtime.workspace = true
+orbitrelay-asset-local-store.workspace = true
+orbitrelay-catalog-sqlite.workspace = true
+orbitrelay-document.workspace = true
+orbitrelay-document-runtime.workspace = true
+orbitrelay-pdf.workspace = true
+orbitrelay-query.workspace = true
+async-trait = "0.1"
+thiserror = "2"
+bytes = "1"
+sha2 = "0.10"
+getrandom = "0.2"
+tokio = { version = "1", features = ["io-std", "io-util", "macros", "net", "rt-multi-thread", "signal", "sync", "time"] }
+tokio-tungstenite = "0.28"
+tokio-util = { version = "0.7", features = ["rt"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["fmt", "env-filter"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+[dev-dependencies]
+futures-util = "0.3"
+lopdf = { version = "0.44", default-features = false }
+rusqlite.workspace = true
+serde_json = "1"
